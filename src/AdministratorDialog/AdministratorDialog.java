@@ -113,11 +113,9 @@ public class AdministratorDialog extends JDialog {
         open.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TXT 필터링 https://creatordev.tistory.com/51
                 JFileChooser chooser = new JFileChooser();
                 FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
 
-                // TODO: 2023-11-20 컴퓨터 마다 경로 설정 다르게
                 // 디렉터리 설정 https://stackoverflow.com/questions/13516829/jfilechooser-change-default-directory-in-windows
                 chooser.setCurrentDirectory(new File("./resource/data/"));
                 chooser.setFileFilter(filter);
@@ -134,15 +132,12 @@ public class AdministratorDialog extends JDialog {
                 updateData();
             }
         });
-        // TODO: 2023-11-29 생성자에서 StringBuffer 받고 그 버퍼에 아무것도 저장 X면 그냥 리턴하고 저장되어있으면 Buffer열어서 저장하기
         saveAs.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO: 2023-11-20 filter 설정 검색 https://creatordev.tistory.com/51
                 JFileChooser chooser = new JFileChooser();
                 FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
 
-                // TODO: 2023-11-20 컴퓨터 마다 경로 설정 다르게
                 chooser.setCurrentDirectory(new File("./resource/data/"));
                 chooser.setFileFilter(filter);
 
