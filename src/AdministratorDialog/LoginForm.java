@@ -19,7 +19,6 @@ public class LoginForm extends JDialog {
     private boolean loginFlag = false;
     private boolean loginTried = false;
     public LoginForm(MainFrame mainFrame) {
-        // TODO: 2023-11-20 로그인 창 뜨면 메인프레임 스레드 재움
         super(mainFrame,"관리자 로그인", true);
         setTitle("authorization confirm");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -93,7 +92,6 @@ public class LoginForm extends JDialog {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO: 2023-11-20 로그인 완성
                 confirmAuthorization();
             }
         });
