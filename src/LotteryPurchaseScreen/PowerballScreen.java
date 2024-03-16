@@ -22,7 +22,6 @@ public class PowerballScreen extends LotteryScreen {
         getMoney().setHorizontalAlignment(JLabel.CENTER);
     }
     public void init(){
-        //패널 지우고 다시 그리기 검색 https://stackoverflow.com/questions/2501861/how-can-i-remove-a-jpanel-from-a-jframe
         removeAll();
         add(new PowerballScreen(getLotteryKiosk()), BorderLayout.CENTER);
         revalidate();

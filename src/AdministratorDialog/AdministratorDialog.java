@@ -21,8 +21,6 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Vector;
 
-// TODO: 2023-12-04 스레드에서 화면 껐을 때 경고창 안뜨는지 확인
-
 public class AdministratorDialog extends JDialog {
     private final LogPanel logPanel = new LogPanel();;
     private final CardLayout cardLayout = new CardLayout();

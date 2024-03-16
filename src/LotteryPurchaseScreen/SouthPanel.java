@@ -37,7 +37,6 @@ public class SouthPanel extends JPanel {
     }
 
     private void buildGUI(JLabel money) {
-        // TODO: 2023-11-20 테두리 설정 검색 https://www.tutorialspoint.com/swingexamples/add_border_to_panel.htm
         setBorder(BorderFactory.createLineBorder(new Color(10,10,30),5));
         setLayout(new GridLayout(0,3));
         add(money);
@@ -59,7 +58,6 @@ public class SouthPanel extends JPanel {
         }
         
         if(!totalFlag){
-            // TODO: 2023-11-19 경고 팝업 띄우기
             String errorMessage = "";
             for(int i = 0 ; i < count - 1; i ++)
                 errorMessage += Integer.toString(errorIndex.get(i)) + ", ";
@@ -68,7 +66,6 @@ public class SouthPanel extends JPanel {
         } else {
             if(numberPanelVector.isEmpty())
                 return;
-            // TODO: 2023-11-19 결제창 띄우기
             PaymentDialog paymentDialog = new PaymentDialog(lotteryKiosk.getMainFrame());
             paymentDialog.setPaymentStatus(Constants.PAYMENTINPROGRESS);
             paymentDialog.setVisible(true);

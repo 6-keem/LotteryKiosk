@@ -33,7 +33,6 @@ public class NumberPanel extends JPanel {
     private void setAutoButton(String fileName, String pushedFileName){
         autoButton = new JButton(new ImageIcon(fileName));
         autoButton.setOpaque(false);
-        // TODO: 2023-11-21 배경 없애는 법 검색
         autoButton.setContentAreaFilled(false);
 
         autoButton.setPressedIcon(new ImageIcon(pushedFileName));
@@ -58,8 +57,6 @@ public class NumberPanel extends JPanel {
         textField.setHorizontalAlignment(JTextField.CENTER);
         textField.addKeyListener(new MyJTextFieldListener());
         textField.setOpaque(false);
-        // TODO: 2023-11-21 테두리 없애는 법 검색
-        //https://www.tutorialspoint.com/swingexamples/add_border_to_label.htm
         textField.setBorder(BorderFactory.createEmptyBorder());
         jTextFields.add(textField);
 

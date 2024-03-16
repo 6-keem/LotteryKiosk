@@ -68,7 +68,6 @@ public class PaymentDialog extends JDialog {
             @Override
             public void stateChanged(ChangeEvent e) {
                 JSlider slider = (JSlider) e.getSource();
-                // TODO: 2023-11-19 결제 타이머 시작 특정 시간 이후 오류
                 if(slider.getValue() == 0)
                     animationImageLabel.setIcon(new ImageIcon("./resource/cardinsert/0.gif"));
                 else if(slider.getValue() != slider.getMaximum())
