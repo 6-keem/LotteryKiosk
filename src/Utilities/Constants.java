@@ -155,7 +155,6 @@ public class Constants {
             if (flag)
                 vt.add(r);
         }
-        // 자바에서 정렬하는 법 검색 https://www.geeksforgeeks.org/java-program-to-sort-vector-using-collections-sort-method/
         Collections.sort(vt);
         vt.add((int)(Math.random() * (hashMap.get(BONUS_END) - hashMap.get(BONUS_START) + 1) + hashMap.get(BONUS_START)));
         return vt;
