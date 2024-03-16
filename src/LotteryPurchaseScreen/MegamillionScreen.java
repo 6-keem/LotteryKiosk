@@ -21,8 +21,6 @@ public class MegamillionScreen extends LotteryScreen {
     }
 
     public void init(){
-        // TODO: 2023-11-20 numberCheckPanel 작성 시 주의
-        //패널 지우고 다시 그리기 검색 https://stackoverflow.com/questions/2501861/how-can-i-remove-a-jpanel-from-a-jframe
         removeAll();
         add(new MegamillionScreen(getLotteryKiosk()), BorderLayout.CENTER);
         revalidate();
