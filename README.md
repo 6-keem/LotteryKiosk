@@ -1,3 +1,3 @@
-# LotteryKiosk-2023-WinterVacation-Java-Project
+# LotteryKiosk-2023-WinterBreak-Java-Project
 ---
 
