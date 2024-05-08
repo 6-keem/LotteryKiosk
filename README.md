@@ -2,4 +2,5 @@
 ---
 
 ### 시연 영상
-https://youtu.be/J-t57aBg4yg
+
+[![Video Label](http://img.youtube.com/vi/J-t57aBg4yg/0.jpg)](https://youtu.be/J-t57aBg4yg)
